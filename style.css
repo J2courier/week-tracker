@@ -1,0 +1,341 @@
+/* General Styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0px;
+    letter-spacing: 2px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0E1C2D;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Container and Items */
+.containerParent {
+    background-color: #08173F;
+    border-radius: 0px 5px 5px 0px;
+    box-shadow: 0px 0px 5px 0px rgb(5, 12, 82);
+    height: 100px;
+    width: 20px;
+    position: relative;
+    left: 200px;
+    top: 270px;
+    z-index: 2000;
+}
+.btn-div{
+    height: 80px;
+    width: 15px;
+    background-color: #32B9B1;
+    border-radius: 0px 5px 5px 0px;
+    position: relative;
+    left: 2px;
+    top: 10px;
+}
+
+.itemParent {
+    border-width: 0px 1px 0px 0px;
+    background-color: #08173f;
+    box-shadow: 0px 0px 5px 0px rgb(2, 2, 74);
+    height: 660px;
+    width: 200px;
+    position: absolute;
+    left: -200px;
+    top: -270px;
+    overflow-y: auto;
+}
+.itemParent::-webkit-scrollbar{
+    display: none;
+}
+
+.item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10, .item11, .item12, .item13,
+.item14,.item15,.item16,.item17,.item18 {
+    height: 40px;
+    width: 160px;
+    border: 1px solid rgb(106, 112, 193);
+    border-radius: 10px;
+    position: relative;
+    left: 10px;
+    top: 5px;
+    margin: 9px;
+    padding: 10px 0px 15px 35px;
+    color: white;
+    transition: background-color 1s ease, color 0.3s ease;
+}
+
+.item1{
+    height: 90px;
+    width:200px;
+    position: sticky;
+    top: 0px;
+    padding: 10px 0px 0px 40px;
+    background-color: #08173F;
+    box-shadow: 0px 0px 5px 0px rgb(10, 0, 62);
+    z-index: 1;
+}
+
+.remaining{
+    color: white;
+    position: relative;
+    top: 20px;
+    
+}
+.item2:hover, .item3:hover, .item4:hover, .item5:hover, .item2:hover, .item6:hover,
+.item7:hover, .item8:hover, .item9:hover, .item10:hover, .item11:hover, .item12:hover, 
+.item13:hover, .item14:hover,.item15:hover,.item16:hover,.item17:hover,.item18:hover{
+    background-color: #6161d6;
+    color: rgb(40, 40, 40);
+}
+.blur{
+    background-color: #0d0d54ef;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.week{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 15px;
+    left: 545px;
+}
+.container{
+    height: 570px;
+    width: 1240px;
+    background-color: #182D61;
+    border-radius: 5px;
+    position: absolute;
+    left: 20px;
+    top: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.box1, .box2, .box3{
+    height: 40px;
+    width: 200px;
+    background-color: #438EAE;
+    border-radius: 45px;
+    margin: 5px;
+    position: relative;
+    top: 10px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.box1{
+    position: absolute;
+    left: 25px;
+}
+.box2{
+    position: absolute;
+    left: 520px;
+}
+.box3{
+    position: absolute;
+    left: 1000px;
+}
+
+.blur{
+    height: 660px;
+    width: 1500px;
+    background-color: #182d6139;
+    position: absolute;
+    left: -200px;
+    top: -270px;
+}
+.containerTime{
+    height: 570px;
+    width: 1240px;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    display: flex;
+    flex-direction: column;
+}
+.box4, .box5, .box6{
+    height: 40px;
+    width: 200px;
+    background-color: #32B9B1;
+    border-radius: 5px;
+    margin: 5px;
+    position: relative;
+    top: 100px;
+    left: 25px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.containerSub{
+    height: 570px;
+    width: 1240px;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    display: flex;
+    flex-direction: column;
+}
+.box7, .box8, .box9{
+    height: 40px;
+    width: 720px;
+    background-color: #32B9B1;
+    border-radius: 5px;
+    margin: 5px;
+    position: relative;
+    top: 100px;
+    left: 250px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.containerAtt{
+    position: absolute;
+    z-index: 1000;
+}
+.containerAtt > div{
+    background-color: #438EAE;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.att1,.att2,.att3{
+    position: relative;
+    left: 1050px;
+    top: 90px;
+}
+.att4,.att5,.att6{
+    position: relative;
+    left: 1110px;
+    top: -45px;
+}
+.att7,.att8,.att9{
+    position: relative;
+    left: 1170px;
+    top: -180px;
+}
+
+.containerAtt > div:hover{
+    background-color: #08173F;
+}
+/*.box10,.box11,.box12,.box33,.box28,.box29,.box30,.box31,.box32{
+
+}*/
+
+.container2{
+    display: grid;
+    grid-template-columns: repeat(2, 40px);
+    grid-template-rows: repeat(4, 40px);
+    grid-gap: 10px;
+    position: absolute;
+    z-index: 1000;
+}
+.container2 > div {
+    background-color: #438EAE;
+    height: 40px;
+    width: 40px;
+    margin: 5px;
+    border-radius: 5px;
+    position: relative;
+    left: 1080px;
+    top: 340px;
+}
+
+.container3{
+    height: 570px;
+    width: 1240px;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    display: flex;
+    flex-direction: column;
+}
+.box16, .box17, .box18, .box23{
+    height: 40px;
+    width: 720px;
+    background-color: #32B9B1;
+    border-radius: 5px;
+    margin: 5px;
+    position: relative;
+    top: 350px;
+    left: 250px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.container4{
+    height: 570px;
+    width: 1240px;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    display: flex;
+    flex-direction: column;
+}
+.box19, .box20, .box21, .box22{
+    height: 40px;
+    width: 200px;
+    background-color: #32B9B1;
+    border-radius: 5px;
+    margin: 5px;
+    position: relative;
+    top: 350px;
+    left: 25px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.container5{
+    height: 570px;
+    width: 1240px;
+    position: absolute;
+    left: -1px;
+    top: -1px;
+    display: flex;
+    flex-direction: row;
+}
+.box25, .box26, .box27{
+    height: 40px;
+    width: 200px;
+    background-color: #438EAE;
+    border-radius: 45px;
+    margin: 5px;
+    position: relative;
+    top: 270px;
+    left: 25px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.box25{
+    position: absolute;
+    left: 25px;
+}
+.box26{
+    position: absolute;
+    left: 520px;
+}
+.box27{
+    position: absolute;
+    left: 1000px;
+}
+
+.box10, .box11, .box12, .box7, .box8, .box9
+, .box4, .box5, .box6, .box19, .box20, .box21
+, .box16, .box17, .box18, .box13, .box14, .box15
+, .box10, .box11, .box12{
+    box-shadow: 0px 0px 5px 0px rgb(2, 11, 75);
+}
+
+.box10:hover,.box11:hover,.box12:hover{
+    background-color: #08173F;
+}
